@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		DB06AA882831A9A30036C712 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06AA872831A9A30036C712 /* AppDelegate.swift */; };
 		DB06AA8A2831A9A30036C712 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06AA892831A9A30036C712 /* SceneDelegate.swift */; };
-		DB06AA8C2831A9A30036C712 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06AA8B2831A9A30036C712 /* ViewController.swift */; };
-		DB06AA8F2831A9A30036C712 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB06AA8D2831A9A30036C712 /* Main.storyboard */; };
 		DB06AA912831A9A50036C712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB06AA902831A9A50036C712 /* Assets.xcassets */; };
 		DB06AA942831A9A50036C712 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB06AA922831A9A50036C712 /* LaunchScreen.storyboard */; };
+		DB06AAA82831AF0B0036C712 /* AuthorizationCarouselPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06AAA12831AF0B0036C712 /* AuthorizationCarouselPresenter.swift */; };
+		DB06AAA92831AF0B0036C712 /* AuthorizationCarouselWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06AAA22831AF0B0036C712 /* AuthorizationCarouselWorker.swift */; };
+		DB06AAAA2831AF0B0036C712 /* AuthorizationCarouselRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06AAA32831AF0B0036C712 /* AuthorizationCarouselRouter.swift */; };
+		DB06AAAB2831AF0B0036C712 /* AuthorizationCarouselModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06AAA42831AF0B0036C712 /* AuthorizationCarouselModels.swift */; };
+		DB06AAAC2831AF0B0036C712 /* AuthorizationCarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06AAA52831AF0B0036C712 /* AuthorizationCarouselViewController.swift */; };
+		DB06AAAD2831AF0B0036C712 /* AuthorizationCarouselInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06AAA62831AF0B0036C712 /* AuthorizationCarouselInteractor.swift */; };
+		DB06AAAE2831AF0B0036C712 /* AuthorizationCarouselViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB06AAA72831AF0B0036C712 /* AuthorizationCarouselViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DB06AA842831A9A30036C712 /* Reddit Chile Memes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reddit Chile Memes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB06AA872831A9A30036C712 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB06AA892831A9A30036C712 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DB06AA8B2831A9A30036C712 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DB06AA8E2831A9A30036C712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB06AA902831A9A50036C712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB06AA932831A9A50036C712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB06AA952831A9A50036C712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB06AAA12831AF0B0036C712 /* AuthorizationCarouselPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationCarouselPresenter.swift; sourceTree = "<group>"; };
+		DB06AAA22831AF0B0036C712 /* AuthorizationCarouselWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationCarouselWorker.swift; sourceTree = "<group>"; };
+		DB06AAA32831AF0B0036C712 /* AuthorizationCarouselRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationCarouselRouter.swift; sourceTree = "<group>"; };
+		DB06AAA42831AF0B0036C712 /* AuthorizationCarouselModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationCarouselModels.swift; sourceTree = "<group>"; };
+		DB06AAA52831AF0B0036C712 /* AuthorizationCarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationCarouselViewController.swift; sourceTree = "<group>"; };
+		DB06AAA62831AF0B0036C712 /* AuthorizationCarouselInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationCarouselInteractor.swift; sourceTree = "<group>"; };
+		DB06AAA72831AF0B0036C712 /* AuthorizationCarouselViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthorizationCarouselViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,76 @@
 		DB06AA862831A9A30036C712 /* Reddit Chile Memes */ = {
 			isa = PBXGroup;
 			children = (
-				DB06AA872831A9A30036C712 /* AppDelegate.swift */,
-				DB06AA892831A9A30036C712 /* SceneDelegate.swift */,
-				DB06AA8B2831A9A30036C712 /* ViewController.swift */,
-				DB06AA8D2831A9A30036C712 /* Main.storyboard */,
-				DB06AA902831A9A50036C712 /* Assets.xcassets */,
-				DB06AA922831A9A50036C712 /* LaunchScreen.storyboard */,
-				DB06AA952831A9A50036C712 /* Info.plist */,
+				DB06AAA02831AE7A0036C712 /* Foundation */,
+				DB06AA9F2831AE700036C712 /* Main */,
+				DB06AA9E2831AE630036C712 /* Common */,
+				DB06AA9D2831AE520036C712 /* Scenes */,
+				DB06AA9C2831AE480036C712 /* Config */,
+				DB06AA9B2831AE380036C712 /* Resources */,
 			);
 			path = "Reddit Chile Memes";
+			sourceTree = "<group>";
+		};
+		DB06AA9B2831AE380036C712 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DB06AA902831A9A50036C712 /* Assets.xcassets */,
+				DB06AA922831A9A50036C712 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DB06AA9C2831AE480036C712 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DB06AA952831A9A50036C712 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		DB06AA9D2831AE520036C712 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DB06AAAF2831B08B0036C712 /* AuthorizationCarousel */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DB06AA9E2831AE630036C712 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DB06AA9F2831AE700036C712 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DB06AA872831A9A30036C712 /* AppDelegate.swift */,
+				DB06AA892831A9A30036C712 /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DB06AAA02831AE7A0036C712 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		DB06AAAF2831B08B0036C712 /* AuthorizationCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				DB06AAA32831AF0B0036C712 /* AuthorizationCarouselRouter.swift */,
+				DB06AAA22831AF0B0036C712 /* AuthorizationCarouselWorker.swift */,
+				DB06AAA42831AF0B0036C712 /* AuthorizationCarouselModels.swift */,
+				DB06AAA12831AF0B0036C712 /* AuthorizationCarouselPresenter.swift */,
+				DB06AAA62831AF0B0036C712 /* AuthorizationCarouselInteractor.swift */,
+				DB06AAA52831AF0B0036C712 /* AuthorizationCarouselViewController.swift */,
+				DB06AAA72831AF0B0036C712 /* AuthorizationCarouselViewController.xib */,
+			);
+			path = AuthorizationCarousel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +196,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB06AAAE2831AF0B0036C712 /* AuthorizationCarouselViewController.xib in Resources */,
 				DB06AA942831A9A50036C712 /* LaunchScreen.storyboard in Resources */,
 				DB06AA912831A9A50036C712 /* Assets.xcassets in Resources */,
-				DB06AA8F2831A9A30036C712 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +209,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB06AA8C2831A9A30036C712 /* ViewController.swift in Sources */,
 				DB06AA882831A9A30036C712 /* AppDelegate.swift in Sources */,
+				DB06AAAA2831AF0B0036C712 /* AuthorizationCarouselRouter.swift in Sources */,
+				DB06AAAD2831AF0B0036C712 /* AuthorizationCarouselInteractor.swift in Sources */,
 				DB06AA8A2831A9A30036C712 /* SceneDelegate.swift in Sources */,
+				DB06AAAB2831AF0B0036C712 /* AuthorizationCarouselModels.swift in Sources */,
+				DB06AAA82831AF0B0036C712 /* AuthorizationCarouselPresenter.swift in Sources */,
+				DB06AAAC2831AF0B0036C712 /* AuthorizationCarouselViewController.swift in Sources */,
+				DB06AAA92831AF0B0036C712 /* AuthorizationCarouselWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DB06AA8D2831A9A30036C712 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DB06AA8E2831A9A30036C712 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DB06AA922831A9A50036C712 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,12 +359,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XY5DSHVNFX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Reddit Chile Memes/Info.plist";
+				INFOPLIST_FILE = "Reddit Chile Memes/Config/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,12 +387,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XY5DSHVNFX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Reddit Chile Memes/Info.plist";
+				INFOPLIST_FILE = "Reddit Chile Memes/Config/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
