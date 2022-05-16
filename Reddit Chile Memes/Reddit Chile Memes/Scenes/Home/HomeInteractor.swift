@@ -13,24 +13,82 @@
 import UIKit
 
 protocol HomeBusinessLogic {
-    func doSomething(request: Home.Something.Request)
+    func fetchPosts(request: Home.Posts.Request)
 }
 
-protocol HomeDataStore {
-    //var name: String { get set }
-}
+protocol HomeDataStore { }
 
 class HomeInteractor: HomeBusinessLogic, HomeDataStore {
     var presenter: HomePresentationLogic?
-    var worker: HomeWorker?
-    //var name: String = ""
-  
-    // MARK: Do something
-    func doSomething(request: Home.Something.Request) {
-        worker = HomeWorker()
-        worker?.doSomeWork()
+    var worker: HomeWorker = HomeWorker(newService: NewAPI())
     
-        let response = Home.Something.Response()
-        presenter?.presentSomething(response: response)
+    var after: String?
+    var isLastPage = false
+    var query: String?
+    
+    var news = [New.Child]()
+  
+    // MARK: - fetchPosts
+    func fetchPosts(request: Home.Posts.Request) {
+        if request.isRefresh {
+            after = nil
+            news = []
+            isLastPage = false
+            query = request.query
+        }
+        
+        if !isLastPage {
+            
+            if let query = request.query {
+                let requestSearchNews = New.SearchNews.Request(limit: request.limit, after: after, query: query)
+                            
+                worker.searchNews(request: requestSearchNews) { [weak self] result in
+                    guard let self = self else { return }
+                    
+                    switch result {
+                    case .success(let response):
+                        
+                        self.news.append(contentsOf: response.data?.children ?? [])
+                        
+                        self.after = response.data?.after
+                        self.isLastPage = self.after == nil
+                        
+                        let responsePosts = Home.Posts.Response(news: self.news)
+                        self.presenter?.presentPosts(response: responsePosts)
+                        
+                    case .failure(let error):
+                        let response = RedditModels.Error.Response(error: error)
+                        self.presenter?.presentError(response: response)
+                    }
+                }
+            } else {
+                let requestFetchNews = New.FecthNews.Request(limit: request.limit, after: after)
+                            
+                worker.fetchNews(request: requestFetchNews) { [weak self] result in
+                    guard let self = self else { return }
+                    
+                    switch result {
+                    case .success(let response):
+                        
+                        self.news.append(contentsOf: response.data?.children ?? [])
+                        
+                        self.after = response.data?.after
+                        self.isLastPage = self.after == nil
+                        
+                        let responsePosts = Home.Posts.Response(news: self.news)
+                        self.presenter?.presentPosts(response: responsePosts)
+                        
+                    case .failure(let error):
+                        let response = RedditModels.Error.Response(error: error)
+                        self.presenter?.presentError(response: response)
+                    }
+                }
+            }
+        } else {
+            let response = Home.Posts.Response(news: news)
+            self.presenter?.presentPosts(response: response)
+        }
+        
     }
+    
 }

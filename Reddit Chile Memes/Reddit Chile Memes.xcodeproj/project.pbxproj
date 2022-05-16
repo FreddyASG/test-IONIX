@@ -29,8 +29,20 @@
 		DB6903C32832065E001354FD /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6903BC2832065E001354FD /* HomeInteractor.swift */; };
 		DB6903C42832065E001354FD /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB6903BD2832065E001354FD /* HomeViewController.xib */; };
 		DB6903C728320A09001354FD /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6903C628320A09001354FD /* AppRoute.swift */; };
+		DB6903CB28323908001354FD /* UserDefaultsReddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6903CA28323908001354FD /* UserDefaultsReddit.swift */; };
 		DBB45F2E2831F16000126088 /* AuthorizationCarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB45F2C2831F16000126088 /* AuthorizationCarouselCollectionViewCell.swift */; };
 		DBB45F2F2831F16000126088 /* AuthorizationCarouselCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBB45F2D2831F16000126088 /* AuthorizationCarouselCollectionViewCell.xib */; };
+		DBB90FA228328BAA0042AC43 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB90FA028328BAA0042AC43 /* HomeTableViewCell.swift */; };
+		DBB90FA328328BAA0042AC43 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBB90FA128328BAA0042AC43 /* HomeTableViewCell.xib */; };
+		DBB90FA628328D910042AC43 /* ViewReddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB90FA528328D910042AC43 /* ViewReddit.swift */; };
+		DBBC61E82832AEEB0017697C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC61E72832AEEB0017697C /* NetworkService.swift */; };
+		DBBC61EB2832AFDE0017697C /* ErrorReddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC61EA2832AFDE0017697C /* ErrorReddit.swift */; };
+		DBBC61EE2832B0B80017697C /* NewEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC61ED2832B0B80017697C /* NewEndpoint.swift */; };
+		DBBC61F02832B1580017697C /* RedditModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC61EF2832B1580017697C /* RedditModels.swift */; };
+		DBBC61F22832B2E30017697C /* NewAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC61F12832B2E30017697C /* NewAPI.swift */; };
+		DBBC61F42832B4B10017697C /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC61F32832B4B10017697C /* New.swift */; };
+		DBBC61F62832BC030017697C /* Encodable+Reddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC61F52832BC030017697C /* Encodable+Reddit.swift */; };
+		DBBC61F82832C4F20017697C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC61F72832C4F20017697C /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,8 +73,20 @@
 		DB6903BD2832065E001354FD /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		DB6903C628320A09001354FD /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
 		DB6903C828321D93001354FD /* Reddit Chile Memes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Reddit Chile Memes.entitlements"; sourceTree = "<group>"; };
+		DB6903CA28323908001354FD /* UserDefaultsReddit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsReddit.swift; sourceTree = "<group>"; };
 		DBB45F2C2831F16000126088 /* AuthorizationCarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationCarouselCollectionViewCell.swift; sourceTree = "<group>"; };
 		DBB45F2D2831F16000126088 /* AuthorizationCarouselCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthorizationCarouselCollectionViewCell.xib; sourceTree = "<group>"; };
+		DBB90FA028328BAA0042AC43 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		DBB90FA128328BAA0042AC43 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		DBB90FA528328D910042AC43 /* ViewReddit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReddit.swift; sourceTree = "<group>"; };
+		DBBC61E72832AEEB0017697C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		DBBC61EA2832AFDE0017697C /* ErrorReddit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorReddit.swift; sourceTree = "<group>"; };
+		DBBC61ED2832B0B80017697C /* NewEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEndpoint.swift; sourceTree = "<group>"; };
+		DBBC61EF2832B1580017697C /* RedditModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditModels.swift; sourceTree = "<group>"; };
+		DBBC61F12832B2E30017697C /* NewAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAPI.swift; sourceTree = "<group>"; };
+		DBBC61F32832B4B10017697C /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
+		DBBC61F52832BC030017697C /* Encodable+Reddit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Reddit.swift"; sourceTree = "<group>"; };
+		DBBC61F72832C4F20017697C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +181,9 @@
 			isa = PBXGroup;
 			children = (
 				DB6903C5283209EE001354FD /* Router */,
+				DB6903C9283238D3001354FD /* Settings */,
+				DBBC61E92832AFC40017697C /* Models */,
+				DBBC61E62832AE920017697C /* Services */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -173,6 +200,7 @@
 		DB06AAA02831AE7A0036C712 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				DBB90FA428328D7E0042AC43 /* UI */,
 				DB6903B32831F98B001354FD /* Extensions */,
 			);
 			path = Foundation;
@@ -205,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				DB6903B42831FA6C001354FD /* String+Reddit.swift */,
+				DBBC61F52832BC030017697C /* Encodable+Reddit.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -212,6 +241,7 @@
 		DB6903B628320642001354FD /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				DBB90F9F28328B910042AC43 /* Cells */,
 				DB6903B92832065E001354FD /* HomeRouter.swift */,
 				DB6903B82832065E001354FD /* HomeWorker.swift */,
 				DB6903BA2832065E001354FD /* HomeModels.swift */,
@@ -231,6 +261,14 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		DB6903C9283238D3001354FD /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DB6903CA28323908001354FD /* UserDefaultsReddit.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		DBB45F2B2831F13000126088 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +276,52 @@
 				DBB45F2D2831F16000126088 /* AuthorizationCarouselCollectionViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		DBB90F9F28328B910042AC43 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DBB90FA028328BAA0042AC43 /* HomeTableViewCell.swift */,
+				DBB90FA128328BAA0042AC43 /* HomeTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DBB90FA428328D7E0042AC43 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DBB90FA528328D910042AC43 /* ViewReddit.swift */,
+				DBBC61F72832C4F20017697C /* BaseViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DBBC61E62832AE920017697C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DBBC61E72832AEEB0017697C /* NetworkService.swift */,
+				DBBC61EC2832B0850017697C /* News */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DBBC61E92832AFC40017697C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBBC61EF2832B1580017697C /* RedditModels.swift */,
+				DBBC61F32832B4B10017697C /* New.swift */,
+				DBBC61EA2832AFDE0017697C /* ErrorReddit.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DBBC61EC2832B0850017697C /* News */ = {
+			isa = PBXGroup;
+			children = (
+				DBBC61ED2832B0B80017697C /* NewEndpoint.swift */,
+				DBBC61F12832B2E30017697C /* NewAPI.swift */,
+			);
+			path = News;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +336,7 @@
 				DB06AA812831A9A30036C712 /* Frameworks */,
 				DB06AA822831A9A30036C712 /* Resources */,
 				DBC745F42831DC79009A2200 /* SwiftLint */,
+				E6469B0C0ED6B053F22D2EFD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -301,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB6903B22831F65A001354FD /* Localizable.strings in Resources */,
+				DBB90FA328328BAA0042AC43 /* HomeTableViewCell.xib in Resources */,
 				DB06AAAE2831AF0B0036C712 /* AuthorizationCarouselViewController.xib in Resources */,
 				DB06AA942831A9A50036C712 /* LaunchScreen.storyboard in Resources */,
 				DBB45F2F2831F16000126088 /* AuthorizationCarouselCollectionViewCell.xib in Resources */,
@@ -329,6 +415,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		E6469B0C0ED6B053F22D2EFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reddit Chile Memes/Pods-Reddit Chile Memes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reddit Chile Memes/Pods-Reddit Chile Memes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Reddit Chile Memes/Pods-Reddit Chile Memes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		F0D89DD4852B8343D343C3F0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -359,18 +462,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBBC61F62832BC030017697C /* Encodable+Reddit.swift in Sources */,
 				DB06AA882831A9A30036C712 /* AppDelegate.swift in Sources */,
 				DBB45F2E2831F16000126088 /* AuthorizationCarouselCollectionViewCell.swift in Sources */,
+				DBBC61EE2832B0B80017697C /* NewEndpoint.swift in Sources */,
 				DB06AAAA2831AF0B0036C712 /* AuthorizationCarouselRouter.swift in Sources */,
+				DBBC61F82832C4F20017697C /* BaseViewController.swift in Sources */,
 				DB6903C32832065E001354FD /* HomeInteractor.swift in Sources */,
+				DBBC61F02832B1580017697C /* RedditModels.swift in Sources */,
 				DB06AAAD2831AF0B0036C712 /* AuthorizationCarouselInteractor.swift in Sources */,
 				DB06AA8A2831A9A30036C712 /* SceneDelegate.swift in Sources */,
+				DBB90FA228328BAA0042AC43 /* HomeTableViewCell.swift in Sources */,
 				DB6903C728320A09001354FD /* AppRoute.swift in Sources */,
 				DB6903C22832065E001354FD /* HomeViewController.swift in Sources */,
+				DBBC61F22832B2E30017697C /* NewAPI.swift in Sources */,
+				DB6903CB28323908001354FD /* UserDefaultsReddit.swift in Sources */,
 				DB06AAAB2831AF0B0036C712 /* AuthorizationCarouselModels.swift in Sources */,
 				DB6903C12832065E001354FD /* HomeModels.swift in Sources */,
+				DBBC61EB2832AFDE0017697C /* ErrorReddit.swift in Sources */,
 				DB6903C02832065E001354FD /* HomeRouter.swift in Sources */,
+				DBBC61E82832AEEB0017697C /* NetworkService.swift in Sources */,
+				DBBC61F42832B4B10017697C /* New.swift in Sources */,
 				DB06AAA82831AF0B0036C712 /* AuthorizationCarouselPresenter.swift in Sources */,
+				DBB90FA628328D910042AC43 /* ViewReddit.swift in Sources */,
 				DB06AAAC2831AF0B0036C712 /* AuthorizationCarouselViewController.swift in Sources */,
 				DB6903B52831FA6C001354FD /* String+Reddit.swift in Sources */,
 				DB06AAA92831AF0B0036C712 /* AuthorizationCarouselWorker.swift in Sources */,

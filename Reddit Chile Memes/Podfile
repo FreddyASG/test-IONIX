@@ -7,5 +7,7 @@ target 'Reddit Chile Memes' do
 
   # Pods for Reddit Chile Memes
   pod 'SwiftLint'
+  pod 'Alamofire', '~> 5.2'
+  pod 'Kingfisher'
 
 end

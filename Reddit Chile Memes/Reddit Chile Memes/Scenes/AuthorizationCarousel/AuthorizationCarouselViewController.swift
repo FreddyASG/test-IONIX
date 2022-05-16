@@ -160,6 +160,9 @@ class AuthorizationCarouselViewController: UIViewController {
     }
     
     private func navigateToLocation() {
+        
+        UserDefaultsReddit.hiddenCarousel(true)
+        
         let indexPath = IndexPath(item: 2, section: 0)
         
         DispatchQueue.main.async {
@@ -188,6 +191,18 @@ class AuthorizationCarouselViewController: UIViewController {
     func loadInitialData() {
         let request = AuthorizationCarousel.InitialData.Request()
         interactor?.loadInitialData(request: request)
+    }
+    
+    // MARK: - Actions
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        let index = Int(targetContentOffset.pointee.x / collectionView.frame.width)
+        
+        switch items[index] {
+        case .location:
+            UserDefaultsReddit.hiddenCarousel(true)
+        default:
+            break
+        }
     }
 }
 

@@ -15,12 +15,17 @@ import UIKit
 enum Home {
   
     // MARK: Use cases
-    enum Something {
+    enum Posts {
         struct Request {
+            let isRefresh: Bool
+            let limit: Int
+            let query: String?
         }
         struct Response {
+            let news: [New.Child]
         }
         struct ViewModel {
+            let posts: [New.Child]
         }
     }
 }

@@ -12,7 +12,31 @@
 
 import Foundation
 
+protocol NewServiceProtocol {
+    func fetchNews(request: New.FecthNews.Request,
+                   completion: @escaping (Result<New.FecthNews.Response, ErrorReddit>) -> Void)
+    func searchNews(request: New.SearchNews.Request,
+                    completion: @escaping (Result<New.SearchNews.Response, ErrorReddit>) -> Void)
+}
+
 class HomeWorker {
-    func doSomeWork() {
+    var newService: NewServiceProtocol?
+    
+    init(newService: NewServiceProtocol) {
+        self.newService = newService
+    }
+    
+    func fetchNews(request: New.FecthNews.Request,
+                   completion: @escaping (Result<New.FecthNews.Response, ErrorReddit>) -> Void) {
+        newService?.fetchNews(request: request, completion: { result in
+            completion(result)
+        })
+    }
+    
+    func searchNews(request: New.SearchNews.Request,
+                    completion: @escaping (Result<New.SearchNews.Response, ErrorReddit>) -> Void) {
+        newService?.searchNews(request: request, completion: { result in
+            completion(result)
+        })
     }
 }

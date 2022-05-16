@@ -13,15 +13,27 @@
 import UIKit
 
 protocol HomePresentationLogic {
-    func presentSomething(response: Home.Something.Response)
+    func presentPosts(response: Home.Posts.Response)
+    func presentError(response: RedditModels.Error.Response)
 }
 
 class HomePresenter: HomePresentationLogic {
     weak var viewController: HomeDisplayLogic?
   
-    // MARK: - Do something
-    func presentSomething(response: Home.Something.Response) {
-        let viewModel = Home.Something.ViewModel()
-        viewController?.displaySomething(viewModel: viewModel)
+    // MARK: - presentPosts
+    func presentPosts(response: Home.Posts.Response) {
+        
+        let posts = response.news.filter { new in
+            return new.data?.linkFlairText == "Shitposting" && new.data?.postHint == "image"
+        }
+        
+        let viewModel = Home.Posts.ViewModel(posts: posts)
+        viewController?.displayPosts(viewModel: viewModel)
+    }
+    
+    // MARK: - presentError
+    func presentError(response: RedditModels.Error.Response) {
+        let viewModel = RedditModels.Error.ViewModel(error: response.error)
+        viewController?.displayError(viewModel: viewModel)
     }
 }
