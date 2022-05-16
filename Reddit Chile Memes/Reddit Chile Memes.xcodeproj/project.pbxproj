@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ABE83BBB2BF67F211C4B36AF /* Pods_Reddit_Chile_Memes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0A55360C4461FEF32446CC /* Pods_Reddit_Chile_Memes.framework */; };
 		DB06AA882831A9A30036C712 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06AA872831A9A30036C712 /* AppDelegate.swift */; };
 		DB06AA8A2831A9A30036C712 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB06AA892831A9A30036C712 /* SceneDelegate.swift */; };
 		DB06AA912831A9A50036C712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB06AA902831A9A50036C712 /* Assets.xcassets */; };
@@ -21,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E0A55360C4461FEF32446CC /* Pods_Reddit_Chile_Memes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reddit_Chile_Memes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8895F2A22F911727533A2BCC /* Pods-Reddit Chile Memes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reddit Chile Memes.debug.xcconfig"; path = "Target Support Files/Pods-Reddit Chile Memes/Pods-Reddit Chile Memes.debug.xcconfig"; sourceTree = "<group>"; };
+		ADC9DCEE947B69EEA9E832C1 /* Pods-Reddit Chile Memes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reddit Chile Memes.release.xcconfig"; path = "Target Support Files/Pods-Reddit Chile Memes/Pods-Reddit Chile Memes.release.xcconfig"; sourceTree = "<group>"; };
 		DB06AA842831A9A30036C712 /* Reddit Chile Memes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reddit Chile Memes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB06AA872831A9A30036C712 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB06AA892831A9A30036C712 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE83BBB2BF67F211C4B36AF /* Pods_Reddit_Chile_Memes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28C10CCEC938EA91C362A6A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8895F2A22F911727533A2BCC /* Pods-Reddit Chile Memes.debug.xcconfig */,
+				ADC9DCEE947B69EEA9E832C1 /* Pods-Reddit Chile Memes.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		78AE751C7AC5C2231BA41C06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E0A55360C4461FEF32446CC /* Pods_Reddit_Chile_Memes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DB06AA7B2831A9A30036C712 = {
 			isa = PBXGroup;
 			children = (
 				DB06AA862831A9A30036C712 /* Reddit Chile Memes */,
 				DB06AA852831A9A30036C712 /* Products */,
+				28C10CCEC938EA91C362A6A3 /* Pods */,
+				78AE751C7AC5C2231BA41C06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB06AA982831A9A50036C712 /* Build configuration list for PBXNativeTarget "Reddit Chile Memes" */;
 			buildPhases = (
+				F0D89DD4852B8343D343C3F0 /* [CP] Check Pods Manifest.lock */,
 				DB06AA802831A9A30036C712 /* Sources */,
 				DB06AA812831A9A30036C712 /* Frameworks */,
 				DB06AA822831A9A30036C712 /* Resources */,
+				DBC745F42831DC79009A2200 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -203,6 +229,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DBC745F42831DC79009A2200 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		F0D89DD4852B8343D343C3F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Reddit Chile Memes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DB06AA802831A9A30036C712 /* Sources */ = {
@@ -352,9 +421,11 @@
 		};
 		DB06AA992831A9A50036C712 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8895F2A22F911727533A2BCC /* Pods-Reddit Chile Memes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XY5DSHVNFX;
@@ -372,6 +443,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.freddya.Reddit-Chile-Memes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -380,9 +452,11 @@
 		};
 		DB06AA9A2831A9A50036C712 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADC9DCEE947B69EEA9E832C1 /* Pods-Reddit Chile Memes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XY5DSHVNFX;
@@ -400,6 +474,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.freddya.Reddit-Chile-Memes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
