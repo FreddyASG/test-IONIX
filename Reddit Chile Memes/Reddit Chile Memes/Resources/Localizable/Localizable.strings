@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  Reddit Chile Memes
+
+  Created by Freddy Silva on 15/5/22.
+  
+*/
+
+// MARK: - AuthorizationCarousel
+"com.AuthorizationCarousel.camera.title" = "Camera Access";
+"com.AuthorizationCarousel.camera.subtitle" = "Please allow access to your camera to take photos";
+"com.AuthorizationCarousel.notifications.title" = "Enable push notifications";
+"com.AuthorizationCarousel.notifications.subtitle" = "Enable push notifications to let\nsend you personal news and updates.";
+"com.AuthorizationCarousel.location.title" = "Enable location services";
+"com.AuthorizationCarousel.location.subtitle" = "We wants to access your location only to provide a better experience by helping you find new friends nearby.";
+"com.AuthorizationCarousel.button.title.allow" = "Allow";
+"com.AuthorizationCarousel.button.title.enable" = "Enable";
+"com.AuthorizationCarousel.button.title.cancel" = "Cancel";

@@ -4,12 +4,12 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthorizationCarouselViewController" customModule="Reddit_Chile_Memes" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="PDN-Jz-OoI" id="rtc-FP-u24"/>
                 <outlet property="view" destination="iN0-l3-epB" id="N2R-Lc-2Va"/>
             </connections>
         </placeholder>
@@ -17,14 +17,31 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PDN-Jz-OoI">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="a5V-9d-5CA">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ZP0-0N-V5c"/>
+                        <outlet property="delegate" destination="-1" id="Cvo-jm-Noh"/>
+                    </connections>
+                </collectionView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="PDN-Jz-OoI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2m1-8U-UZ7"/>
+                <constraint firstAttribute="trailing" secondItem="PDN-Jz-OoI" secondAttribute="trailing" id="aMu-po-cTh"/>
+                <constraint firstItem="PDN-Jz-OoI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="gHy-zE-i1g"/>
+                <constraint firstAttribute="bottom" secondItem="PDN-Jz-OoI" secondAttribute="bottom" id="t0r-DO-INr"/>
+            </constraints>
             <point key="canvasLocation" x="132" y="125"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

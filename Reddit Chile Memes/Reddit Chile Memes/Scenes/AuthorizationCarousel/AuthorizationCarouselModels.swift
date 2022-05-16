@@ -13,14 +13,66 @@
 import UIKit
 
 enum AuthorizationCarousel {
-  
+    
+    enum Item: CaseIterable {
+        case camera
+        case notifications
+        case location
+        
+        var image: String {
+            switch self {
+            case .camera:
+                return "camera-carousel-image"
+            case .notifications:
+                return "notifications-carousel-image"
+            case .location:
+                return "location-carousel-image"
+            }
+        }
+        
+        var title: String {
+            switch self {
+            case .camera:
+                return "com.AuthorizationCarousel.camera.title".localized()
+            case .notifications:
+                return "com.AuthorizationCarousel.notifications.title".localized()
+            case .location:
+                return "com.AuthorizationCarousel.location.title".localized()
+            }
+        }
+        
+        var subtitle: String {
+            switch self {
+            case .camera:
+                return "com.AuthorizationCarousel.camera.subtitle".localized()
+            case .notifications:
+                return "com.AuthorizationCarousel.notifications.subtitle".localized()
+            case .location:
+                return "com.AuthorizationCarousel.location.subtitle".localized()
+            }
+        }
+        
+        var titleButton: String {
+            switch self {
+            case .camera:
+                return "com.AuthorizationCarousel.button.title.allow".localized()
+            case .notifications:
+                return "com.AuthorizationCarousel.button.title.enable".localized()
+            case .location:
+                return "com.AuthorizationCarousel.button.title.enable".localized()
+            }
+        }
+    }
+
     // MARK: Use cases
-    enum Something {
+    enum InitialData {
         struct Request {
         }
         struct Response {
+            let items: [Item]
         }
         struct ViewModel {
+            let items: [Item]
         }
     }
 }

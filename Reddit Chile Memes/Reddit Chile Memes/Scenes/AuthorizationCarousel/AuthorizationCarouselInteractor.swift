@@ -13,24 +13,18 @@
 import UIKit
 
 protocol AuthorizationCarouselBusinessLogic {
-    func doSomething(request: AuthorizationCarousel.Something.Request)
+    func loadInitialData(request: AuthorizationCarousel.InitialData.Request)
 }
 
-protocol AuthorizationCarouselDataStore {
-    //var name: String { get set }
-}
+protocol AuthorizationCarouselDataStore {}
 
 class AuthorizationCarouselInteractor: AuthorizationCarouselBusinessLogic, AuthorizationCarouselDataStore {
     var presenter: AuthorizationCarouselPresentationLogic?
     var worker: AuthorizationCarouselWorker?
-    //var name: String = ""
-  
-    // MARK: Do something
-    func doSomething(request: AuthorizationCarousel.Something.Request) {
-        worker = AuthorizationCarouselWorker()
-        worker?.doSomeWork()
     
-        let response = AuthorizationCarousel.Something.Response()
-        presenter?.presentSomething(response: response)
+    // MARK: - loadInitialData
+    func loadInitialData(request: AuthorizationCarousel.InitialData.Request) {
+        let response = AuthorizationCarousel.InitialData.Response(items: AuthorizationCarousel.Item.allCases)
+        presenter?.presentInitialData(response: response)
     }
 }

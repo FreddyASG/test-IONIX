@@ -13,15 +13,15 @@
 import UIKit
 
 protocol AuthorizationCarouselPresentationLogic {
-    func presentSomething(response: AuthorizationCarousel.Something.Response)
+    func presentInitialData(response: AuthorizationCarousel.InitialData.Response)
 }
 
 class AuthorizationCarouselPresenter: AuthorizationCarouselPresentationLogic {
     weak var viewController: AuthorizationCarouselDisplayLogic?
   
-    // MARK: - Do something
-    func presentSomething(response: AuthorizationCarousel.Something.Response) {
-        let viewModel = AuthorizationCarousel.Something.ViewModel()
-        viewController?.displaySomething(viewModel: viewModel)
+    // MARK: - presentInitialData
+    func presentInitialData(response: AuthorizationCarousel.InitialData.Response) {
+        let viewModel = AuthorizationCarousel.InitialData.ViewModel(items: response.items)
+        viewController?.displayInitialData(viewModel: viewModel)
     }
 }
