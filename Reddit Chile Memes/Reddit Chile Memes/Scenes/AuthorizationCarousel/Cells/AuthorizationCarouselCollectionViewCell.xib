@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AuthorizationCarouselCollectionViewCell" customModule="Reddit_Chile_Memes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBL-WE-CZn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Scw-dt-yST">
+                                <rect key="frame" x="32" y="118.5" width="311" height="575"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera-carousel-image" translatesAutoresizingMaskIntoConstraints="NO" id="J6c-nP-e1y">
+                                        <rect key="frame" x="24" y="0.0" width="263" height="231"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="J9l-aT-K6N">
+                                        <rect key="frame" x="30.5" y="271" width="250" height="156"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera Access" textAlignment="natural" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZR-f5-3F9">
+                                                <rect key="frame" x="54.5" y="0.0" width="141.5" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" name="Title-Label-Gray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We wants to access your location only to provide a better experience by helping you find new friends nearby." textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aK8-Hq-kwg">
+                                                <rect key="frame" x="0.0" y="39.5" width="250" height="116.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="hMv-eX-nhZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" name="Subtitle-Label-Gray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hTa-oe-5j6">
+                                        <rect key="frame" x="63" y="467" width="185" height="108"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZv-ds-dxb">
+                                                <rect key="frame" x="0.0" y="0.0" width="185" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="2Ng-nN-Y4i"/>
+                                                    <constraint firstAttribute="width" constant="185" id="ceY-n0-ZIf"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                    <backgroundConfiguration key="background" image="button-background"/>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="didTapAuthorization:" destination="gTV-IL-0wX" eventType="touchUpInside" id="pcf-gM-xLY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgZ-N3-at1">
+                                                <rect key="frame" x="0.0" y="58" width="185" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="If5-Go-QW1"/>
+                                                    <constraint firstAttribute="width" constant="185" id="wsl-h4-o4D"/>
+                                                </constraints>
+                                                <color key="tintColor" name="Title-Button-Gray"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="didTapCancel:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Atx-IN-wiN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Scw-dt-yST" firstAttribute="centerY" secondItem="xBL-WE-CZn" secondAttribute="centerY" id="2Fh-Le-wyS"/>
+                            <constraint firstAttribute="trailing" secondItem="Scw-dt-yST" secondAttribute="trailing" constant="32" id="Wni-ew-KtH"/>
+                            <constraint firstItem="Scw-dt-yST" firstAttribute="leading" secondItem="xBL-WE-CZn" secondAttribute="leading" constant="32" id="hCM-Er-tEK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="xBL-WE-CZn" secondAttribute="bottom" id="4if-zl-PtT"/>
+                <constraint firstItem="xBL-WE-CZn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="I4q-ee-Yx8"/>
+                <constraint firstItem="xBL-WE-CZn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cpX-k6-d75"/>
+                <constraint firstAttribute="trailing" secondItem="xBL-WE-CZn" secondAttribute="trailing" id="r4k-nr-dUy"/>
+            </constraints>
+            <size key="customSize" width="361" height="770"/>
+            <connections>
+                <outlet property="authorizationButton" destination="FZv-ds-dxb" id="ynG-cb-yYt"/>
+                <outlet property="authorizationImageView" destination="J6c-nP-e1y" id="1zg-nu-0Yh"/>
+                <outlet property="cancelButton" destination="xgZ-N3-at1" id="YCC-a2-yN8"/>
+                <outlet property="subtitleLabel" destination="aK8-Hq-kwg" id="WNN-Cw-Er7"/>
+                <outlet property="titleLabel" destination="eZR-f5-3F9" id="n1j-0f-tag"/>
+            </connections>
+            <point key="canvasLocation" x="32.608695652173914" y="78.348214285714278"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="button-background" width="185" height="50"/>
+        <image name="camera-carousel-image" width="263" height="231"/>
+        <namedColor name="Subtitle-Label-Gray">
+            <color red="0.29019607843137257" green="0.29019607843137257" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Title-Button-Gray">
+            <color red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Title-Label-Gray">
+            <color red="0.14901960784313725" green="0.14901960784313725" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
